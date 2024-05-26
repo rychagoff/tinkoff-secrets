@@ -1,0 +1,42 @@
+:root {
+  --font: "Roboto", "Arial", sans-serif;
+  --font-basic: 17px;
+  --line-heigth-basic: 26px;
+
+  --text-color: #000000;
+  --link-color: #0068ff;
+  --border-color: #cccccc;
+
+  --tablet-width: 768px;
+  --desktop-width: 1440px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
