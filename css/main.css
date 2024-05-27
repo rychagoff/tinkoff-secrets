@@ -11,6 +11,8 @@
   --desktop-width: 1440px;
 }
 
+/* GLOBAL */
+
 *,
 *::before,
 *::after {
@@ -20,12 +22,25 @@
 body {
   margin: 0;
   padding: 0;
+
+  font-family: var(--font);
+  font-size: var(--font-basic);
+  line-height: var(--line-heigth-basic);
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
   object-fit: contain;
+}
+
+p {
+  margin: 20px 0;
+}
+
+.link {
+  color: var(--link-color);
 }
 
 .visually-hidden {
@@ -39,4 +54,54 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+/* STYLES */
+
+.title {
+  margin: 0 0 20px;
+
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.article-image {
+  margin-bottom: 8px;
+}
+
+.article-caption {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.recommended-header {
+  margin: 0 0 20px;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.recommended-list {
+  margin: 0;
+  padding: 0;
+}
+
+.article-link {
+  text-decoration: none;
+}
+
+.aside-link {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.author__name {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.author__description {
+  font-size: 13px;
+  line-height: 20px;
 }
